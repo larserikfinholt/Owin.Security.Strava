@@ -37,7 +37,7 @@ namespace Owin.Security.Strava
 
         public string SignInAsAuthenticationType { get; set; }
 
-        public IStravaAuthenticationProvider Provider { get; set; }
+        public IStravaAuthenticationProvider Provider { get; get; }
 
         public ISecureDataFormat<AuthenticationProperties> StateDataFormat { get; set; }
 
